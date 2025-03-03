@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+
+
+metadata:
+  name: nginx-pod
+
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx #태그 생략시 latest version
+      ports:
+        - containerPort: 80 #문서화 옵션(가독성을 위한) 아무런 기능 영향 안끼침
